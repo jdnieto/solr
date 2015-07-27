@@ -2,7 +2,7 @@ FROM centos
 MAINTAINER David Martin
 
 # Install Java
-RUN yum install java-1.7.0-openjdk
+RUN yum install -y java-1.7.0-openjdk
 
 # # Install Solr
 ENV SOLR_HOME /opt/solr/example/solr
