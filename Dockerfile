@@ -1,9 +1,8 @@
-FROM ubuntu:14.04
-MAINTAINER Open Knowledge
+FROM centos
+MAINTAINER David Martin
 
 # Install Java
-RUN apt-get -q -y update
-RUN DEBIAN_FRONTEND=noninteractive apt-get -q -y install default-jre-headless
+RUN yum install java-1.7.0-openjdk
 
 # # Install Solr
 ENV SOLR_HOME /opt/solr/example/solr
